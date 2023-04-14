@@ -1,0 +1,78 @@
+*{margin:0; padding:0;}
+a{text-decoration:none;}
+body{
+    font-family: '맑은 고딕';
+    font-size: 16px;
+    line-height: 26px;
+    min-width: 1320px;
+}
+
+/* 배경색상 */
+.brand1{
+    background-color: #c0e3ef;
+}
+
+/* 이미지 크기 */
+img{
+    width:1320px;
+    display: block;
+    margin: auto;
+}
+
+/* 버튼 */
+.img-box{
+	position: fixed;
+	/* position:relative; */
+	right: 50px;
+	bottom: 50px;
+	width: 86px;
+	height: 87px;
+	z-index: 99;
+  }
+  .img-box img{
+	position:absolute;
+	width: 70px;
+	height: 70px;
+	left: 0px;
+	top:0px;
+  }
+  .img-box img.img-hover{
+	display:none;
+  }
+  .img-box:hover img.img{
+	display:none;
+  }
+  .img-box:hover img.img-hover{
+	display:block
+  }
+/* .btn_1 {
+	list-style: none;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	text-align: center;
+	z-index: 99;
+}
+
+.btn_1 li {
+	margin: 10px;
+}
+
+.btn_1 li a {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	background: #6a5445;
+	color: #fff;
+} */
+/* 탑버튼 */
+.top{
+    position: fixed;
+    right: 70px;
+    bottom: 150px;
+     display:none;
+}
+.top img{
+	width: auto;
+}
