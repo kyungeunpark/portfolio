@@ -32,7 +32,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
-
+/* 
         a {
             text-decoration: none;
             color: #c18e45;
@@ -51,7 +51,34 @@
         }
         a:hover{
             -webkit-text-stroke: #fff 0.3px;
-        }
+        } */
+
+        /* 버튼 */
+.img-box{
+	position: fixed;
+	/* position:relative; */
+	right: 200px;
+	bottom: 100px;
+	width: 86px;
+	height: 87px;
+	z-index: 99;
+  }
+  .img-box img{
+	position:absolute;
+	width: 70px;
+	height: 70px;
+	left: 0px;
+	top:0px;
+  }
+  .img-box img.img-hover{
+	display:none;
+  }
+  .img-box:hover img.img{
+	display:none;
+  }
+  .img-box:hover img.img-hover{
+	display:block
+  }
 
     </style>
 </head>
@@ -61,7 +88,14 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <a href="../index.html#fh5co-work" class="home">HOME</a>
+    <!-- <a href="../index.html#fh5co-work" class="home">HOME</a> -->
+    <div class="img-box">
+        <a href="../index.html#fh5co-work"><img class="img" src="../guide/butimg/HOME3.png" alt="첫화면"></a>
+        <a href="../index.html#fh5co-work"><img class="img-hover" src="../guide/butimg/HOME2.png" alt="두번째화면"></a>
+
+
+
+
 </body>
 
 </html>
